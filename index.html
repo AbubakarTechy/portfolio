@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bkr's Portfolio site</title>
+    <link href="normalize.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Shadows+Into+Light&family=Work+Sans&display=swap" rel="stylesheet">
+
+    <style>
+
+
+        body{
+
+            background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
+            font-family: "Work Sans" , sans-serif;
+
+        }
+
+        a {
+               text-decoration: none;
+        }
+
+        h1, h2 , h3{
+
+              font-family: "Days One", sans-serif;
+        }
+
+        nav {
+
+            display: flex;
+
+            background-color: #200e3d;
+            justify-content: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            padding: 0 10%;
+            color: white;
+            list-style: none;
+        }
+
+        nav ul li a{
+            font-size: 16px;
+            padding: 0 15px;
+            color:white ;
+            transition: o.2s;
+            text-transform: uppercase;
+        }
+
+        nav ul li a:hover {
+            transition: 0.2s;
+            color: #52c5ff;
+
+        }
+        .container{
+
+            position:relative;
+            width:100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .hero{
+            padding-top: 130px;
+        }
+
+        .hero img{
+            border-style: none;
+            border-radius: 50%;
+            margin: 0 auto;
+            max-width: 440px;
+            display: block;
+        }
+        h1 {
+            color: black;
+            text-align: center;
+            font-size: 24px;
+            margin: 30px 0px 100px;
+
+       }
+         .aboutme{
+            width: 90%;
+            max-width: 1100px;
+            height: auto;
+            background-color: white;
+            text-align: center;
+            padding: 40px 50px 70px;
+            margin: 0 auto;
+            box-shadow: 10px 10px 0px rgb(0 0 0 /40%), -10px -10px 0px rgb(255 114 114 / 80%);
+         }
+         .aboutme-section{
+            padding: 5px;
+            display: flex;
+            align-items:center ;
+            justify-content: center;
+            flex-flow: wrap;
+         }
+         .aboutme-image{
+            height:450px;
+            width: 400px;
+            background-image: url("bkr3.png.jpg");
+            background-size: cover;
+            background-position: center;
+         }
+
+         .aboutme-text{
+            height: auto;
+            width: 40%;
+            margin-left: 40px;
+            text-align: left;
+         }
+
+         #projects {
+           padding: 5px;
+           margin: 5%;
+           width: 90;
+           height: auto;
+           text-align: center;
+
+          }
+
+          .projects{
+
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-flow:wrap;
+            
+          }
+
+          #projects h2{
+               color: white;
+
+          }
+
+          .village-project {
+            width:400px;
+            height:400px;
+            background:white;
+            position:relative;
+            border-radius:10px;
+            background-image:url("pic1.png.jpg");
+            margin:20px;
+            background-size:cover;
+            background-position:center;
+          }
+
+          .bbc-project {
+            width:400px;
+            height:400px;
+            background:white;
+            position:relative;
+            border-radius:10px;
+            background-image:url("bbc.png.png");
+            margin:20px;
+            background-size:cover;
+            background-position:center;
+          }
+
+
+          .text {
+
+            position:absolute;
+            height:60px;
+            width:90%;
+            left:0;
+            bottom:0;
+            z-index:0;
+            background-color:white;
+            overflow:hidden;
+            transition:0.3s;
+            padding:20px;
+          }
+
+          .text:hover{
+
+            height:175px;
+            transition:0.3s;
+
+          }
+
+          .text h3 {
+
+            margin-top:55px;
+
+          }
+          .content{
+            color:black;
+
+          }
+          .button{
+            border:5px solid lightblue;
+            border-radius:5px;
+            width:160px;
+            margin-bottom:100px;
+            margin-left: 10px;
+            
+          }
+
+          .contact{
+
+            width: 100%;
+            height: auto;
+            padding: 75px 0 50px 0;
+            text-align: center;
+            background-color: rgba(3,3,3,45%);
+          }
+
+          .contact p {
+            margin-bottom: 50px;
+
+          }
+
+          .contact h2 .contact p {
+            color:white;
+
+          }
+
+          .contact-form{
+            max-width: 800px;
+            display: flex;
+            text-align: left;
+            max-width: 1100px;
+            margin: 0 auto;
+            color: white;
+
+          }
+
+          .contact-form label{
+            display:block;
+            margin-bottom:9px;
+      
+          }
+          .message{
+            display:flex;
+            flex-direction: column;
+            width: 60%;
+          }
+
+          .message textarea {
+            border-radius:5px;
+            border:0px;
+
+          }
+
+          .contact-details{
+
+            flex:1;
+            margin-right:50px;
+
+          }
+
+          .contact-details input{
+            width:200px;
+            border-radius:5px;
+            border:0px;
+            padding:15px 20px;
+            margin-bottom: 20px;
+          }
+          .message button {
+            color:#1d3d5f;
+            border:0;
+            border-radius: 5px;
+            background: lightblue;
+            width:140px;
+            height:40px;
+            margin-top: 40px;
+            margin-left: auto;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor:pointer;
+            transition: 0.3s;
+          }
+          .message button :hover{
+            background: black;
+            color: white;
+            transition:0.2s;
+
+          }
+
+        
+    </style>
+
+</head>
+
+<body>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="#aboutme">About Me</a></li>
+
+                <li><a href="#aboutme">Projects</a></li>
+
+                <li><a href="#aboutme">Contact Me</a></li>
+
+            </ul>
+
+        </nav>
+
+           <section class="hero">
+
+               <div class="container">
+
+                    <img src="bkr.png.jpg">
+                    <h1>Hi! I'm Abubakar! I am a web developer.</h1>
+
+
+
+               </div>
+
+           </section>
+
+           <section id="aboutme" class="aboutme">
+
+                <h2>About me</h2>
+
+                <div class="aboutme-section">
+
+                    <div class="img">
+                        
+                <div class="aboutme-image"></div>
+
+                    </div>
+
+                    <div class="aboutme-text">
+
+                       <p>My name is abubakar Rasheed.I got my primary education in my vilage school.My village name is Thakar Dawara.I have done my matriculation in my city Zafarwal.Then i moved to lahore and complete my 12th.Now i am study Software Eng in Superior University.</p>
+                       <p>I spend most of my time in doing Courses on udemy and in reading books.
+                        I have made a collection of several books.
+                        I have books of Shakespeare, Charles Dickens,etc.
+                        Books make me wise and keep me away from bad company.</p>
+
+                       <p>During holidays i did a web development course and now I am well familiar with HTML,Css,Javascript,PHP,
+                        Bootstrap,Wordpress,
+                        MySQL,APIs,Python and CEO.Checkout some of the projects i have done below.</p>
+
+                    </div>
+
+                </div>
+
+           </section>
+
+           <section>
+
+                <section id="projects">
+                    <div class="project">
+
+                        <h2>Projects</h2>
+                           <div class="projects">
+
+                            <div class="village-project">
+                                <div class="text">
+
+                                    <h3 class="project-name">My Village</h3>
+
+                                    <div class="content">
+
+                                        <p>A HTML project about my village</p>
+
+                                    </div>
+
+                                    <a class="button" href="file:///C:/Users/admin/Desktop/Web%20Development%20Course/1.Html/My%20Village.index.html" target="_bank">View Project</a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="bbc-project">
+                                <div class="text">
+
+                                    <h3 class="project-name">BBC News Clone</h3>
+
+                                    <div class="content">
+
+                                        <p>This project is a clone of the BBC news website from the web development course.</p>
+
+                                    </div>
+
+                                    <a class="button" href="file:///C:/Users/admin/Desktop/Web%20Development%20Course/2.css/bbc%20news.html" target="_bank">View Project</a>
+
+                                </div>
+
+                            </div>
+
+                           </div>
+
+                    </div>
+
+                    <p>Further Projects are coming soon!</p>
+
+                </section>
+
+                         <section id="contactme" class="contact">
+                            <h2>Contact</h2>
+                            <p>Use this form to get in touch. I would love to hear from you!</p>
+
+                            <form class="contact-form">
+                            
+                            <div class="contact-details">
+
+                                <label for="name">Name</label>
+                                <input type="text" id="yourname" placeholder="Your name">
+
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" placeholder="Reason for your message">
+
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" placeholder="your email address">
+
+
+                            </div>
+
+                            <div class="message">
+
+                                <label for="msg">Message</label>
+                                <textarea id="msg" rows="15"></textarea>
+                                <button class="submit">Submit</button>
+
+                            </div>
+
+                            </form>
+                            
+                         </section>
+
+                         <footer>
+                             <div class="container">
+                                <div class="copyright">
+                                  This site &copy; 2022 Abubakar Rasheed
+                                </div>
+
+                                <div class="social-media">
+
+                                     <a href="https://www.facebook.com/rpcodestars"></a>
+
+                                     <a href="https://twitter.comtechedrob"></a>
+
+
+                                   
+                                </div>
+
+                             </div>
+
+                         </footer>
+
+
+</body>
+</html>
